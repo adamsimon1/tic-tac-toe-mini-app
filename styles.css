@@ -1,0 +1,142 @@
+#boardNscore {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.container {
+  background-color: blanchedalmond;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px 3px grey;
+}
+
+.item {
+  border: 1px dotted black;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 32%;
+  height: 33%;
+  text-align: center;
+  line-height: 175px;
+  font-size: 45px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+#reset {
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  border-radius: 20%;
+}
+
+#reset:hover {
+  color: white;
+  background-color: red;
+  transition: 0.5s;
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  left: 20%;
+  top: 10%;
+  opacity: 0.9;
+  width: 70%;
+  height: 75%;
+  background-color: khaki;
+  z-index: 1;
+  overflow: auto;
+  box-shadow: 3px 3px 3px 3px lightgrey;
+}
+
+#exitBtn {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  width: 30px;
+  height: 30px;
+  background-color: lightslategrey;
+  border-radius: 2px;
+}
+
+#exitBtn:hover {
+  background-color: darkgrey;
+  transition-duration: 0.4s;
+}
+
+.playAgain {
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  border-radius: 20%;
+}
+
+.playAgain:hover {
+  color: white;
+  background-color: green;
+  transition: 0.5s;
+}
+
+#modal table {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  left: 25%;
+  box-shadow: 2px 2px 5px red;
+}
+
+#modal h2 {
+  text-align: center;
+}
+
+#modal .playAgain {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 10%;
+}
+
+#modal .playAgain:hover {
+  background-color: darkgrey;
+  color: azure;
+}
+
+#scoreKeeper {
+  font-size: larger;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+#scoreKeeper td, th{
+  padding: 10px;
+}
+
+#scoreKeeper table{
+  margin-top: 10px;
+  box-shadow: 2px 2px 5px blue;
+}
+
+h2 {
+  text-shadow: 2px 2px 5px red;
+}

@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+  </head>
+  </head>
+  <body>
+
+    <h1>Welcome to Tic-Tac-Toe</h1>
+    <div id='boardNscore'>
+      <div class='container'>
+        <div class='row0 col0 item'></div>
+        <div class='row0 col1 item'></div>
+        <div class='row0 col2 item'></div>
+        <div class='row1 col0 item'></div>
+        <div class='row1 col1 item'></div>
+        <div class='row1 col2 item'></div>
+        <div class='row2 col0 item'></div>
+        <div class='row2 col1 item'></div>
+        <div class='row2 col2 item' ></div>
+      </div>
+      <div id='scoreKeeper'>
+        Score Keeper:
+        <table>
+          <tr>
+            <th>X Win Total</th>
+            <th>O Win Total</th>
+            <th>Draw Total</th>
+          </tr>
+          <tr>
+            <td id='xWinCount'>0</td>
+            <td id='oWinCount'>0</td>
+            <td id='drawCount'>0</td>
+          </tr>
+        </table>
+        <button class='playAgain'>Play Again?</button>
+        <button id='reset'>Reset Tally</button>
+      </div>
+    </div>
+
+    <div id='modal'>
+      <button id='exitBtn'>X</button>
+      <h2 id='winner'></h2>
+        <table>
+          <th>X Win %</th>
+          <th>O Win %</th>
+          <th>Draw %</th>
+          <tr>
+            <td id='xWinPercent'></td>
+            <td id='oWinPercent'></td>
+            <td id='drawPercent'></td>
+          </tr>
+        </table>
+        <button class='playAgain'>Play Again?</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+    <script src='app.js'></script>
+  </body>
+</html>
